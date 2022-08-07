@@ -39,6 +39,10 @@ img {
   display: block;
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -582,6 +586,10 @@ img {
   height: 50px;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-subcribe-input::placeholder {
   font-size: 16px;
@@ -594,14 +602,14 @@ img {
 }
 
 .footer-subcribe-icon {
-  padding-left: 10px;
+  margin-left: 10px;
   position: absolute;
   top: 50%;
   right: 28px;
   transform: translateY(-50%);
 }
 
-button.primary.footer {
+.button.primary.footer {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 28px;
@@ -630,8 +638,6 @@ button.primary.footer {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-
-  cursor: pointer;
 }
 
 .button.primary {
@@ -649,8 +655,6 @@ button.primary.footer {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-
-  cursor: pointer;
 }
 
 .button.current {
