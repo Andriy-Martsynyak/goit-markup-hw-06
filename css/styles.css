@@ -10,7 +10,6 @@
   --secondary-black-color: #000000;
   --adress-color: rgba(255, 255, 255, 0.6);
   --border-content-color: #eeeeee;
-  --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -138,6 +137,7 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -146,7 +146,6 @@ img {
 .contact-nav .link:hover,
 .contact-nav .link:focus {
   color: var(--accent-color);
-  transition: color var(--timing-function);
 }
 
 .contact-nav .link {
@@ -161,6 +160,7 @@ img {
 
 .contact-nav-icon {
   fill: var(--primary-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   margin-right: 10px;
 }
@@ -172,24 +172,6 @@ img {
 .site-nav-item {
   position: relative;
 }
-
-/* .site-nav-item.current {
-}
-
-.site-nav-item::after {
-  content: '';
-
-  position: absolute;
-  left: 0;
-  bottom: 0;
-
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #2196f3; */
-
-/* В головній навігації, за допомогою псевдоелемента ::after, зроблено підкреслення посилання поточної сторінки (на якій зараз знаходиться користувач). */
 
 /*=============/Header============= */
 
@@ -390,12 +372,12 @@ img {
   border-radius: 50%;
 
   background-color: var(--primary-white-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--accent-color);
-  transition: background-color var(--timing-function);
 }
 
 .social-list-icon {
@@ -449,6 +431,7 @@ img {
   width: 100%;
   height: 100%;
   color: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon {
@@ -514,7 +497,6 @@ img {
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--accent-color);
-  transition: background-color var(--timing-function);
 }
 
 .logo.footer {
@@ -550,18 +532,15 @@ img {
 .adress-link:hover,
 .adress-link:focus {
   color: var(--accent-color);
-  transition: color var(--timing-function);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
-  transition: color var(--timing-function);
 }
 
 .site-nav .link.current {
   color: var(--accent-color);
-  transition: color var(--timing-function);
 
   position: relative;
 }
@@ -578,13 +557,11 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: #2196f3;
-  border: 1px solid #000000;
 }
 
 .contact-nav .link:hover,
 .contact-nav .link:focus {
   color: var(--accent-color);
-  transition: color var(--timing-function);
 }
 
 .footer-subscribe-wrapper {
@@ -604,7 +581,7 @@ img {
   width: 358px;
   height: 50px;
 
-  transition: border-color var(--timing-function);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-subcribe-input::placeholder {
   font-size: 16px;
@@ -646,6 +623,7 @@ button.primary.footer {
 
   color: var(--title-text-color);
   background-color: var(--primary-grey-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   font-family: inherit;
   font-weight: 500;
@@ -663,6 +641,7 @@ button.primary.footer {
 
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   font-weight: 700;
   font-size: 16px;
@@ -685,16 +664,12 @@ button.primary.footer {
 .button-list .button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  transition: background-color var(--timing-function);
-  transition: color var(--timing-function);
 }
 
 .button.current:hover,
 .button.current:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  transition: background-color var(--timing-function);
-  transition: color var(--timing-function);
 }
 
 /*=============/Buttons============= */
@@ -747,7 +722,7 @@ button.primary.footer {
   opacity: 0;
 
   transform: translateY(100%);
-  transition: transform var(--timing-function);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-list-item:hover .projects-overlay {
@@ -772,7 +747,6 @@ button.primary.footer {
   border-left: 1px solid var(--border-content-color);
   border-right: 1px solid var(--border-content-color);
   border-bottom: 1px solid var(--border-content-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   padding: 20px 24px;
 }
