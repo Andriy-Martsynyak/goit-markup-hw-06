@@ -726,6 +726,7 @@ img {
 
 .subscribe__form {
   margin: 20px 0 0;
+  display: flex;
 }
 
 .subscribe__input {
